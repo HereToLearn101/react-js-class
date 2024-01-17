@@ -1,5 +1,24 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App,
+.AppCustom {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .app-body,
+.AppCustom .app-body {
+  width: 50vw;
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -35,4 +54,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* UTILITY CLASSES */
+.bg--blue,
+.bg--peach {
+  color: white;
+}
+
+.bg--blue {
+  background-color: #01549d;
+}
+
+.bg--peach {
+  background-color: #eea37f;
 }

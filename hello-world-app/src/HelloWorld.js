@@ -1,12 +1,7 @@
 function HelloWorld() {
     return (
         <div>
-            <h1>hello, world!</h1>
-            <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-            </ul>
+            <h1>Hello, World!</h1>
         </div>
     );
 }
