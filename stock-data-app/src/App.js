@@ -20,6 +20,24 @@ class App extends React.Component {
     }
   }
 
+  increaseValues() {
+    // console.log(this);
+    this.setState((prevState) => ({
+        microsoftValue: prevState.microsoftValue + 1,
+        twitterValue: prevState.twitterValue + 1,
+        amazonValue: prevState.amazonValue + 1
+    }));
+  }
+
+  decreaseValues() {
+    // console.log(this);
+    this.setState((prevState) => ({
+        microsoftValue: prevState.microsoftValue - 1,
+        twitterValue: prevState.twitterValue - 1,
+        amazonValue: prevState.amazonValue - 1
+    }));
+  }
+
   render() {
     return (
       <div className="App">
@@ -32,6 +50,8 @@ class App extends React.Component {
           microsoftValue={this.state.microsoftValue}
           twitterValue={this.state.twitterValue}
           amazonValue={this.state.amazonValue}
+          increase={this.increaseValues.bind(this)}
+          decrease={this.decreaseValues.bind(this)}
         />
       </div>
     );
